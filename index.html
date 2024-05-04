@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable and Searchable Table with JSON Data</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="search"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            cursor: pointer;
+            background-color: #f2f2f2;
+            position: relative;
+        }
+        th.sort-asc::after {
+            content: " \2191"; /* Unicode for up arrow */
+        }
+        th.sort-desc::after {
+            content: " \2193"; /* Unicode for down arrow */
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input v-model="searchQuery" type="search" placeholder="Search...">
+    <table>
+        <thead>
+        <tr>
+            <th @click="sortTable('name')">Name</th>
+            <th @click="sortTable('detail')">Detail</th>
+            <th @click="sortTable('category')">Category</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in sortedData" :key="item.id">
+            <td>{{ item.name }}</td>
+            <td>{{ item.detail }}</td>
+            <td>{{ item.category }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Vue JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                searchQuery: '',
+                sortKey: '',
+                sortOrder: 1,  // 1 for ascending, -1 for descending
+                items: []
+            };
+        },
+        mounted() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(json => {
+                    this.items = json;
+                });
+        },
+        methods: {
+            sortTable(key) {
+                if (this.sortKey === key) {
+                    // Toggle sort order
+                    this.sortOrder = -this.sortOrder;
+                } else {
+                    this.sortKey = key;
+                    this.sortOrder = 1;
+                }
+            }
+        },
+        computed: {
+            filteredData() {
+                const searchLower = this.searchQuery.toLowerCase();
+                return this.items.filter(item =>
+                    item.name.toLowerCase().includes(searchLower) ||
+                    item.detail.toLowerCase().includes(searchLower) ||
+                    item.category.toLowerCase().includes(searchLower)
+                );
+            },
+            sortedData() {
+                return this.filteredData.sort((a, b) => {
+                    let modifier = this.sortOrder;
+                    if (!b[this.sortKey]) return -1 * modifier;
+                    if (!a[this.sortKey]) return 1 * modifier;
+                    if (a[this.sortKey].toLowerCase() < b[this.sortKey].toLowerCase()) {
+                        return -1 * modifier;
+                    }
+                    if (a[this.sortKey].toLowerCase() > b[this.sortKey].toLowerCase()) {
+                        return 1 * modifier;
+                    }
+                    return 0;
+                });
+            }
+        }
+    });
+</script>
+</body>
+</html>
