@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aa moro vallu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css">
     <style>
         body {
-            font-family: Calibri, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Calibri', sans-serif;
+            margin: 0;
+            padding: 0;
         }
         input[type="search"], input[type="checkbox"] {
-            width: 400px;
+            width: 700px;
             padding: 15px;
             margin: 20px 20px 20px 0;
         }
@@ -17,16 +22,14 @@
             width: 30px;
             height: 30px;
             position: relative;
-            top: 8px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
         }
         th {
-            cursor: pointer;
-            background-color: #f2f2f2;
-            position: relative;
+            color: #fff; /* White text for headers */
+            padding: 12px 15px;
         }
         th.sort-asc::after {
             content: " \2191"; /* up arrow */
@@ -35,19 +38,60 @@
             content: " \2193"; /* down arrow */
         }
         td, th {
+            background-color: #333;
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
+        .controls {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        .search-input {
+            flex-grow: 0;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        .checkbox-label {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider {
+            width: 400px;
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: #fff;
+        }
+
+        .year-label {
+            position: absolute;
+            width: 400px;
+            top: 35px;
+            left: 50%;
+            transform: translateX(-67%);
+            text-align: center;        }
+
     </style>
 </head>
 <body>
 <div id="app">
-    <input v-model="searchQuery" type="search" placeholder="Search...">
-    <label>
-        <input type="checkbox" v-model="showOsuOnly">
-        Show entries from osu!
-    </label>
+    <div class="controls">
+        <input v-model="searchQuery" type="search" placeholder="Search..." class="search-input">
+        <label class="checkbox-label">
+            <input type="checkbox" v-model="showOsuOnly">
+            Show entries from osu!
+        </label>
+
+        <div id="year-slider" class="slider"></div>
+        <span class="year-label">From {{ startYear }} to {{ endYear }}</span>
+    </div>
     <table>
         <thead>
         <tr>
@@ -76,7 +120,9 @@
     </table>
 </div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
 <script>
     new Vue({
         el: '#app',
@@ -86,7 +132,9 @@
                 showOsuOnly: false,
                 sortKey: '',
                 sortOrder: 1,
-                items: []
+                items: [],
+                startYear: 1900,
+                endYear: 2024,
             };
         },
         mounted() {
@@ -95,6 +143,20 @@
                 .then(json => {
                     this.items = json;
                 });
+
+            const slider = document.getElementById('year-slider');
+            noUiSlider.create(slider, {
+                start: [this.startYear, this.endYear],
+                connect: true,
+                range: {
+                    'min': 1900,
+                    'max': 2024
+                }
+            });
+            slider.noUiSlider.on('update', (values) => {
+                this.startYear = parseInt(values[0]);
+                this.endYear = parseInt(values[1]);
+            });
         },
         methods: {
             sortTable(key) {
@@ -115,16 +177,17 @@
         computed: {
             filteredData() {
                 const searchLower = this.searchQuery.toLowerCase();
-                return this.items.filter(item =>
-                    item.anime_name.toLowerCase().includes(searchLower) ||
-                    item.anime_year.toString().toLowerCase().includes(searchLower) ||
-                    item.artist.toLowerCase().includes(searchLower) ||
-                    item.song_name.toLowerCase().includes(searchLower) ||
-                    item.song_year.toString().toLowerCase().includes(searchLower) ||
-                    item.genre.toLowerCase().includes(searchLower) ||
-                    item.description.toLowerCase().includes(searchLower) &&
-                    (!this.showOsuOnly || item.osu.toLowerCase() === 'yes')
-                );
+                return this.items.filter(item => {
+                    const matchesSearch = item.anime_name.toLowerCase().includes(searchLower) ||
+                        item.artist.toLowerCase().includes(searchLower) ||
+                        item.song_name.toLowerCase().includes(searchLower) ||
+                        item.genre.toLowerCase().includes(searchLower) ||
+                        item.description.toLowerCase().includes(searchLower);
+                    const matchesOsu = this.showOsuOnly ? item.osu.toLowerCase() === 'yes' : true;
+                    const isWithinYearRange = (item.anime_year >= this.startYear && item.anime_year <= this.endYear) ||
+                        (item.song_year >= this.startYear && item.song_year <= this.endYear);
+                    return matchesSearch && matchesOsu && isWithinYearRange;
+                });
             },
             sortedData() {
                 return this.filteredData.sort((a, b) => {
