@@ -5,7 +5,7 @@
         "artist": "Creepy Nuts",
         "song_name": "Daten",
         "genre": "",
-        "description": "creepy nuts, eikä mashle",
+        "description": "creepy nuts, eik\u00e4 mashle",
         "osu": ""
     },
     {
@@ -78,6 +78,330 @@
         "song_name": "",
         "genre": "",
         "description": "tatu, sasuke",
+        "osu": ""
+    },
+    {
+        "id": 9,
+        "anime_name": "Kantai Collection: KanColle",
+        "artist": "AKINO with bless4",
+        "song_name": "Miiro",
+        "genre": "",
+        "description": "tatoe",
+        "osu": "yes"
+    },
+    {
+        "id": 10,
+        "anime_name": "Machine-Doll wa Kizutsukanai",
+        "artist": "Hitomi Harada, Ai Kayano, and Yui Ogura",
+        "song_name": "Maware! Setsugetsuka",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 11,
+        "anime_name": "One Room",
+        "artist": "Yui Hanasaka (Mao Ichimichi)",
+        "song_name": "Harumachi Clover",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 12,
+        "anime_name": "One Room",
+        "artist": "Moka Aoshima (Suzuko Mimori)",
+        "song_name": "Kibou Refrain",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 13,
+        "anime_name": "Aiura",
+        "artist": "Aiu♥rabu",
+        "song_name": "Kani☆Do-Luck! (カニ☆Do-Luck！))",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 14,
+        "anime_name": "Suzumiya Haruhi no Yuuutsu (2009)",
+        "artist": "Aya Hirano",
+        "song_name": "Super Driver",
+        "genre": "",
+        "description": "diver",
+        "osu": "yes"
+    },
+    {
+        "id": 15,
+        "anime_name": "Amaama to Inazuma",
+        "artist": "MimimemeMIMI",
+        "song_name": "Harebare Fanfare",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 16,
+        "anime_name": "Pretty Cure",
+        "artist": "Mayumi Gojo",
+        "song_name": "DANZEN! Futari wa Precure",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 17,
+        "anime_name": "Koi to Uso",
+        "artist": "Frederic",
+        "song_name": "Kanashii Ureshii",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 18,
+        "anime_name": "Nisekoi",
+        "artist": "Chitoge Kirisaki (Nao Touyama), Kosaki Onodera (Kana Hanazawa)",
+        "song_name": "Taisetsu no Tsukurikata",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 19,
+        "anime_name": "Ange Vierge",
+        "artist": "Konomi Suzuki",
+        "song_name": "Love is MY RAIL",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 20,
+        "anime_name": "Deep Insanity: The Lost Child",
+        "artist": "Konomi Suzuki",
+        "song_name": "Inochi no Tomoshibi",
+        "genre": "",
+        "description": "",
+        "osu": ""
+    },
+    {
+        "id": 21,
+        "anime_name": "Kokkoku",
+        "artist": "MIYAVI vs. KenKen",
+        "song_name": "Flashback",
+        "genre": "",
+        "description": "",
+        "osu": ""
+    },
+    {
+        "id": 22,
+        "anime_name": "Yami Shibai",
+        "artist": "",
+        "song_name": "",
+        "genre": "hatsune miku",
+        "description": "paska hatsune miku",
+        "osu": ""
+    },
+    {
+        "id": 23,
+        "anime_name": "Wotaku ni Koi wa Muzukashii",
+        "artist": "Sumika",
+        "song_name": "Fiction",
+        "genre": "",
+        "description": "ei pancreas/meshi",
+        "osu": ""
+    },
+    {
+        "id": 24,
+        "anime_name": "Senyuu.",
+        "artist": "JAM Project",
+        "song_name": "THE MONSTERS",
+        "genre": "",
+        "description": "opm artisti",
+        "osu": ""
+    },
+    {
+        "id": 25,
+        "anime_name": "Big Order",
+        "artist": "Yousei Teikoku",
+        "song_name": "DISORDER",
+        "genre": "",
+        "description": "ei mirai nikki",
+        "osu": ""
+    },
+    {
+        "id": 26,
+        "anime_name": "My Hero Academia/Boku no Hero Academia",
+        "artist": "the peggies",
+        "song_name": "Ashiato",
+        "genre": "",
+        "description": "ei bunny girl senpai, kimi no sei",
+        "osu": ""
+    },
+    {
+        "id": 27,
+        "anime_name": "Starmyu",
+        "artist": "",
+        "song_name": "",
+        "genre": "boy band",
+        "description": "boy band, poika bändi",
+        "osu": ""
+    },
+    {
+        "id": 28,
+        "anime_name": "Noukin",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "bass slap, basso slapping",
+        "osu": ""
+    },
+    {
+        "id": 29,
+        "anime_name": "Ooyukiumi no Kaina / Kaina of the Great Snow Sea",
+        "artist": "Yorushika",
+        "song_name": "Telepath",
+        "genre": "",
+        "description": "yorushika, ei frieren / danger",
+        "osu": ""
+    },
+    {
+        "id": 30,
+        "anime_name": "Pokemon",
+        "artist": "mafumafu",
+        "song_name": "",
+        "genre": "",
+        "description": "",
+        "osu": ""
+    },
+    {
+        "id": 31,
+        "anime_name": "Tada-kun wa Koi wo Shinai",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "koibito, isekai",
+        "osu": ""
+    },
+    {
+        "id": 32,
+        "anime_name": "Sonny Boy",
+        "artist": "GING NANG BOYZ",
+        "song_name": "Shounen Shoujo",
+        "genre": "bleach",
+        "description": "kami sama lyrics, bleach vibe / viba",
+        "osu": ""
+    },
+    {
+        "id": 33,
+        "anime_name": "Zero no Tsukaima F",
+        "artist": "joku loli ääni",
+        "song_name": "",
+        "genre": "history",
+        "description": "first kiss lyrics",
+        "osu": ""
+    },
+    {
+        "id": 34,
+        "anime_name": "Final Fantasy: The Spirits Within",
+        "artist": "Lara Fabian",
+        "song_name": "The Dream Within",
+        "genre": "",
+        "description": "dream within lyrics",
+        "osu": ""
+    },
+    {
+        "id": 35,
+        "anime_name": "Garugaku.: Sei Girls Square Gakuin",
+        "artist": "south^2",
+        "song_name": "Shining You, Shining Me ~Yume no Chikara de~ (Shining You, Shining Me)",
+        "genre": "",
+        "description": "shiny you, shiny me lyrics",
+        "osu": ""
+    },
+    {
+        "id": 36,
+        "anime_name": "The Disastrous Life of Saiki K.",
+        "artist": "Shiggy Jr.",
+        "song_name": "Oteage Psychics",
+        "genre": "",
+        "description": "put your hands up, pants",
+        "osu": ""
+    },
+    {
+        "id": 37,
+        "anime_name": "NakaImo",
+        "artist": "StylipS",
+        "song_name": "Choose me Darling",
+        "genre": "",
+        "description": "choose my darling lyrics",
+        "osu": ""
+    },
+    {
+        "id": 38,
+        "anime_name": "Valkyrie Drive: Mermaid",
+        "artist": "Mirei Shikishima (Yuka Iguchi) & Mamori Tokonome (Mikako Izawa)",
+        "song_name": "Ultra Super Hyper Miracle Romantic",
+        "genre": "",
+        "description": "Super Ultra Hyper Miracle Romantic lyrics",
+        "osu": ""
+    },
+    {
+        "id": 39,
+        "anime_name": "Bakuon!!",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "Moottori, moottorin äänet, ???",
+        "osu": ""
+    },
+    {
+        "id": 40,
+        "anime_name": "Macross Delta Movie: Gekijou no Walküre",
+        "artist": "",
+        "song_name": "Walküre no Birthday Song",
+        "genre": "",
+        "description": "",
+        "osu": ""
+    },
+    {
+        "id": 41,
+        "anime_name": "Love After World",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "koi wa explosion lyrics",
+        "osu": ""
+    },
+    {
+        "id": 42,
+        "anime_name": "Okashi na Tensei",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "brand new day lyrics",
+        "osu": ""
+    },
+    {
+        "id": 43,
+        "anime_name": "City Hunter",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "I just want to go go go go lyrics",
+        "osu": ""
+    },
+    {
+        "id": 44,
+        "anime_name": "Combatants Will Be Dispatched!",
+        "artist": "",
+        "song_name": "",
+        "genre": "konosuba",
+        "description": "home sweet home, konosuba viba / vibe",
         "osu": ""
     }
 ]
