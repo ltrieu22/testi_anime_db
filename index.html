@@ -52,8 +52,10 @@
         <thead>
         <tr>
             <th @click="sortTable('anime_name')" :class="sortClass('anime_name')">Anime Name</th>
+            <th @click="sortTable('anime_year')" :class="sortClass('anime_year')">Anime Year</th>
             <th @click="sortTable('artist')" :class="sortClass('artist')">Artist</th>
             <th @click="sortTable('song_name')" :class="sortClass('song_name')">Song Name</th>
+            <th @click="sortTable('song_year')" :class="sortClass('song_year')">Song Year</th>
             <th @click="sortTable('genre')" :class="sortClass('genre')">Genre</th>
             <th @click="sortTable('description')" :class="sortClass('description')">Description</th>
             <th @click="sortTable('osu')" :class="sortClass('osu')">osu!</th>
@@ -62,8 +64,10 @@
         <tbody>
         <tr v-for="item in sortedData" :key="item.id" v-if="showOsuOnly ? item.osu.toLowerCase() === 'yes' : true">
             <td>{{ item.anime_name }}</td>
+            <td>{{ item.anime_year }}</td>
             <td>{{ item.artist }}</td>
             <td>{{ item.song_name }}</td>
+            <td>{{ item.song_year }}</td>
             <td>{{ item.genre }}</td>
             <td>{{ item.description }}</td>
             <td>{{ item.osu }}</td>
@@ -113,8 +117,10 @@
                 const searchLower = this.searchQuery.toLowerCase();
                 return this.items.filter(item =>
                     item.anime_name.toLowerCase().includes(searchLower) ||
+                    item.anime_year.toString().toLowerCase().includes(searchLower) ||
                     item.artist.toLowerCase().includes(searchLower) ||
                     item.song_name.toLowerCase().includes(searchLower) ||
+                    item.song_year.toString().toLowerCase().includes(searchLower) ||
                     item.genre.toLowerCase().includes(searchLower) ||
                     item.description.toLowerCase().includes(searchLower) &&
                     (!this.showOsuOnly || item.osu.toLowerCase() === 'yes')
