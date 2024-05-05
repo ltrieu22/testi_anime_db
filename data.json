@@ -2,8 +2,10 @@
     {
         "id": 1,
         "anime_name": "Call of the Night",
+        "anime_year": 2022,
         "artist": "Creepy Nuts",
         "song_name": "Daten",
+        "song_year": 2022,
         "genre": "",
         "description": "creepy nuts, eikä mashle",
         "osu": ""
@@ -11,8 +13,10 @@
     {
         "id": 2,
         "anime_name": "teekyuu",
+        "anime_year": 2012,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "paskaa",
         "description": "? spam",
         "osu": ""
@@ -20,8 +24,10 @@
     {
         "id": 3,
         "anime_name": "BanG Dream!",
+        "anime_year": 2017,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "idol",
         "description": "viulu",
         "osu": ""
@@ -29,8 +35,10 @@
     {
         "id": 4,
         "anime_name": "BanG Dream!",
+        "anime_year": 2017,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "Idol",
         "description": "twinkle remix",
         "osu": ""
@@ -38,8 +46,10 @@
     {
         "id": 5,
         "anime_name": "86",
+        "anime_year": 2021,
         "artist": "SawanoHiroyuki[nZk]:mizuki",
         "song_name": "Avid",
+        "song_year": 2021,
         "genre": "",
         "description": "my goat",
         "osu": ""
@@ -47,8 +57,10 @@
     {
         "id": 6,
         "anime_name": "Selector Spread WIXOSS",
+        "anime_year": 2014,
         "artist": "Kanon Wakeshima",
         "song_name": "world's end, girl's rondo",
+        "song_year": 2015,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -56,8 +68,10 @@
     {
         "id": 7,
         "anime_name": "Tasogare Otome x Amnesia",
+        "anime_year": 2012,
         "artist": "Konomi Suzuki",
         "song_name": "CHOIR JAIL (クワイア ジェイル)",
+        "song_year": 2012,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -65,8 +79,10 @@
     {
         "id": 8,
         "anime_name": "Yamada-kun to 7-nin no Majo",
+        "anime_year": 2015,
         "artist": "WEAVER",
         "song_name": "Kuchizuke Diamond (くちづけDiamond)",
+        "song_year": 2015,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -74,8 +90,10 @@
     {
         "id": 9,
         "anime_name": "hetalia axis",
+        "anime_year": 2009,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "tatu, sasuke",
         "osu": ""
@@ -83,8 +101,10 @@
     {
         "id": 10,
         "anime_name": "Kantai Collection: KanColle",
+        "anime_year": 2015,
         "artist": "AKINO with bless4",
         "song_name": "Miiro",
+        "song_year": 2015,
         "genre": "",
         "description": "tatoe",
         "osu": "yes"
@@ -92,8 +112,10 @@
     {
         "id": 11,
         "anime_name": "Machine-Doll wa Kizutsukanai",
+        "anime_year": 2013,
         "artist": "Hitomi Harada, Ai Kayano, and Yui Ogura",
         "song_name": "Maware! Setsugetsuka",
+        "song_year": 2013,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -101,8 +123,10 @@
     {
         "id": 12,
         "anime_name": "One Room",
+        "anime_year": 2017,
         "artist": "Yui Hanasaka (Mao Ichimichi)",
         "song_name": "Harumachi Clover",
+        "song_year": 2017,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -110,8 +134,10 @@
     {
         "id": 13,
         "anime_name": "One Room",
+        "anime_year": 2017,
         "artist": "Moka Aoshima (Suzuko Mimori)",
         "song_name": "Kibou Refrain",
+        "song_year": 2017,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -119,8 +145,10 @@
     {
         "id": 14,
         "anime_name": "Aiura",
+        "anime_year": 2013,
         "artist": "Aiu♥rabu",
         "song_name": "Kani☆Do-Luck! (カニ☆Do-Luck！))",
+        "song_year": 2013,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -128,8 +156,10 @@
     {
         "id": 15,
         "anime_name": "Suzumiya Haruhi no Yuuutsu (2009)",
+        "anime_year": 2009,
         "artist": "Aya Hirano",
         "song_name": "Super Driver",
+        "song_year": 2009,
         "genre": "",
         "description": "diver",
         "osu": "yes"
@@ -137,8 +167,10 @@
     {
         "id": 16,
         "anime_name": "Amaama to Inazuma",
+        "anime_year": 2016,
         "artist": "MimimemeMIMI",
         "song_name": "Harebare Fanfare",
+        "song_year": 2016,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -146,8 +178,10 @@
     {
         "id": 17,
         "anime_name": "Pretty Cure",
+        "anime_year": 2004,
         "artist": "Mayumi Gojo",
         "song_name": "DANZEN! Futari wa Precure",
+        "song_year": 2004,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -155,8 +189,10 @@
     {
         "id": 18,
         "anime_name": "Koi to Uso",
+        "anime_year": 2017,
         "artist": "Frederic",
         "song_name": "Kanashii Ureshii",
+        "song_year": 2017,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -164,8 +200,10 @@
     {
         "id": 19,
         "anime_name": "Nisekoi",
+        "anime_year": 2014,
         "artist": "Chitoge Kirisaki (Nao Touyama), Kosaki Onodera (Kana Hanazawa)",
         "song_name": "Taisetsu no Tsukurikata",
+        "song_year": 2014,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -173,8 +211,10 @@
     {
         "id": 20,
         "anime_name": "Ange Vierge",
+        "anime_year": 2016,
         "artist": "Konomi Suzuki",
         "song_name": "Love is MY RAIL",
+        "song_year": 2016,
         "genre": "",
         "description": "",
         "osu": "yes"
@@ -182,8 +222,10 @@
     {
         "id": 21,
         "anime_name": "Deep Insanity: The Lost Child",
+        "anime_year": 2021,
         "artist": "Konomi Suzuki",
         "song_name": "Inochi no Tomoshibi",
+        "song_year": 2021,
         "genre": "",
         "description": "",
         "osu": ""
@@ -191,8 +233,10 @@
     {
         "id": 22,
         "anime_name": "Kokkoku",
+        "anime_year": 2018,
         "artist": "MIYAVI vs. KenKen",
         "song_name": "Flashback",
+        "song_year": 2017,
         "genre": "",
         "description": "",
         "osu": ""
@@ -200,8 +244,10 @@
     {
         "id": 23,
         "anime_name": "Yami Shibai",
+        "anime_year": 2013,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "hatsune miku",
         "description": "paska hatsune miku",
         "osu": ""
@@ -209,8 +255,10 @@
     {
         "id": 24,
         "anime_name": "Wotaku ni Koi wa Muzukashii",
+        "anime_year": 2018,
         "artist": "Sumika",
         "song_name": "Fiction",
+        "song_year": 2018,
         "genre": "",
         "description": "ei pancreas/meshi",
         "osu": ""
@@ -218,8 +266,10 @@
     {
         "id": 25,
         "anime_name": "Senyuu.",
+        "anime_year": 2013,
         "artist": "JAM Project",
         "song_name": "THE MONSTERS",
+        "song_year": 2012,
         "genre": "",
         "description": "opm artisti",
         "osu": ""
@@ -227,8 +277,10 @@
     {
         "id": 26,
         "anime_name": "Big Order",
+        "anime_year": 2016,
         "artist": "Yousei Teikoku",
         "song_name": "DISORDER",
+        "song_year": 2016,
         "genre": "",
         "description": "ei mirai nikki",
         "osu": ""
@@ -236,8 +288,10 @@
     {
         "id": 27,
         "anime_name": "My Hero Academia/Boku no Hero Academia",
+        "anime_year": 2016,
         "artist": "the peggies",
         "song_name": "Ashiato",
+        "song_year": 2021,
         "genre": "",
         "description": "ei bunny girl senpai, kimi no sei",
         "osu": ""
@@ -245,8 +299,10 @@
     {
         "id": 28,
         "anime_name": "Starmyu",
+        "anime_year": 2015,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "boy band",
         "description": "boy band, poika bändi",
         "osu": ""
@@ -254,8 +310,10 @@
     {
         "id": 29,
         "anime_name": "Noukin",
+        "anime_year": 2019,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "bass slap, basso slapping",
         "osu": ""
@@ -263,8 +321,10 @@
     {
         "id": 30,
         "anime_name": "Ooyukiumi no Kaina / Kaina of the Great Snow Sea",
+        "anime_year": 2023,
         "artist": "Yorushika",
         "song_name": "Telepath",
+        "song_year": 2023,
         "genre": "",
         "description": "yorushika, ei frieren / danger",
         "osu": ""
@@ -272,8 +332,10 @@
     {
         "id": 31,
         "anime_name": "Pokemon",
+        "anime_year": 1997,
         "artist": "mafumafu",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "",
         "osu": ""
@@ -281,8 +343,10 @@
     {
         "id": 32,
         "anime_name": "Tada-kun wa Koi wo Shinai",
+        "anime_year": 2018,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "koibito, isekai",
         "osu": ""
@@ -290,8 +354,10 @@
     {
         "id": 33,
         "anime_name": "Sonny Boy",
+        "anime_year": 2021,
         "artist": "GING NANG BOYZ",
         "song_name": "Shounen Shoujo",
+        "song_year": 2021,
         "genre": "bleach",
         "description": "kami sama lyrics, bleach vibe / viba",
         "osu": ""
@@ -299,8 +365,10 @@
     {
         "id": 34,
         "anime_name": "Zero no Tsukaima F",
+        "anime_year": 2012,
         "artist": "joku loli ääni",
         "song_name": "",
+        "song_year": "",
         "genre": "history",
         "description": "first kiss lyrics",
         "osu": ""
@@ -308,8 +376,10 @@
     {
         "id": 35,
         "anime_name": "Final Fantasy: The Spirits Within",
+        "anime_year": 2001,
         "artist": "Lara Fabian",
         "song_name": "The Dream Within",
+        "song_year": 2001,
         "genre": "",
         "description": "dream within lyrics",
         "osu": ""
@@ -317,8 +387,10 @@
     {
         "id": 36,
         "anime_name": "Garugaku.: Sei Girls Square Gakuin",
+        "anime_year": 2020,
         "artist": "south^2",
         "song_name": "Shining You, Shining Me ~Yume no Chikara de~ (Shining You, Shining Me)",
+        "song_year": 2020,
         "genre": "",
         "description": "shiny you, shiny me lyrics",
         "osu": ""
@@ -326,8 +398,10 @@
     {
         "id": 37,
         "anime_name": "The Disastrous Life of Saiki K.",
+        "anime_year": 2016,
         "artist": "Shiggy Jr.",
         "song_name": "Oteage Psychics",
+        "song_year": 2018,
         "genre": "",
         "description": "put your hands up, pants",
         "osu": ""
@@ -335,8 +409,10 @@
     {
         "id": 38,
         "anime_name": "NakaImo",
+        "anime_year": 2012,
         "artist": "StylipS",
         "song_name": "Choose me Darling",
+        "song_year": 2012,
         "genre": "",
         "description": "choose my darling lyrics",
         "osu": ""
@@ -344,8 +420,10 @@
     {
         "id": 39,
         "anime_name": "Valkyrie Drive: Mermaid",
+        "anime_year": 2015,
         "artist": "Mirei Shikishima (Yuka Iguchi) & Mamori Tokonome (Mikako Izawa)",
         "song_name": "Ultra Super Hyper Miracle Romantic",
+        "song_year": 2015,
         "genre": "",
         "description": "Super Ultra Hyper Miracle Romantic lyrics",
         "osu": ""
@@ -353,8 +431,10 @@
     {
         "id": 40,
         "anime_name": "Bakuon!!",
+        "anime_year": 2016,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "Moottori, moottorin äänet, ???",
         "osu": ""
@@ -362,17 +442,21 @@
     {
         "id": 41,
         "anime_name": "Macross Delta Movie: Gekijou no Walküre",
+        "anime_year": 2018,
         "artist": "",
         "song_name": "Walküre no Birthday Song",
+        "song_year": 2016,
         "genre": "",
         "description": "",
         "osu": ""
     },
     {
         "id": 42,
-        "anime_name": "Love After World",
+        "anime_name": "Love After World Domination",
+        "anime_year": 2022,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "koi wa explosion lyrics",
         "osu": ""
@@ -380,8 +464,10 @@
     {
         "id": 43,
         "anime_name": "Okashi na Tensei",
+        "anime_year": 2023,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "brand new day lyrics",
         "osu": ""
@@ -389,8 +475,10 @@
     {
         "id": 44,
         "anime_name": "City Hunter",
+        "anime_year": 1987,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "",
         "description": "I just want to go go go go lyrics",
         "osu": ""
@@ -398,8 +486,10 @@
     {
         "id": 45,
         "anime_name": "Combatants Will Be Dispatched!",
+        "anime_year": 2021,
         "artist": "",
         "song_name": "",
+        "song_year": "",
         "genre": "konosuba",
         "description": "home sweet home, konosuba viba / vibe",
         "osu": ""
