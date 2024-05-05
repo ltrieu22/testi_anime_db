@@ -32,7 +32,7 @@
             content: " \2191"; /* up arrow */
         }
         th.sort-desc::after {
-            content: " \2193"; /* down arrow*/
+            content: " \2193"; /* down arrow */
         }
         td, th {
             border: 1px solid #ddd;
@@ -51,12 +51,12 @@
     <table>
         <thead>
         <tr>
-            <th @click="sortTable('anime_name')">Anime Name</th>
-            <th @click="sortTable('artist')">Artist</th>
-            <th @click="sortTable('song_name')">Song Name</th>
-            <th @click="sortTable('genre')">Genre</th>
-            <th @click="sortTable('description')">Description</th>
-            <th @click="sortTable('osu')">osu!</th>
+            <th @click="sortTable('anime_name')" :class="sortClass('anime_name')">Anime Name</th>
+            <th @click="sortTable('artist')" :class="sortClass('artist')">Artist</th>
+            <th @click="sortTable('song_name')" :class="sortClass('song_name')">Song Name</th>
+            <th @click="sortTable('genre')" :class="sortClass('genre')">Genre</th>
+            <th @click="sortTable('description')" :class="sortClass('description')">Description</th>
+            <th @click="sortTable('osu')" :class="sortClass('osu')">osu!</th>
         </tr>
         </thead>
         <tbody>
@@ -95,12 +95,17 @@
         methods: {
             sortTable(key) {
                 if (this.sortKey === key) {
-                    // Toggle sort order
                     this.sortOrder = -this.sortOrder;
                 } else {
                     this.sortKey = key;
                     this.sortOrder = 1;
                 }
+            },
+            sortClass(key) {
+                return {
+                    'sort-asc': this.sortKey === key && this.sortOrder === 1,
+                    'sort-desc': this.sortKey === key && this.sortOrder === -1
+                };
             }
         },
         computed: {
