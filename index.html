@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sortable and Searchable Table with JSON Data</title>
+    <title>aa moro vallu</title>
     <style>
-        /* Basic styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Calibri, sans-serif;
         }
-        input[type="search"] {
-            width: 300px;
-            padding: 10px;
-            margin: 10px 0;
+        input[type="search"], input[type="checkbox"] {
+            width: 400px;
+            padding: 15px;
+            margin: 20px 20px 20px 0;
+        }
+        input[type="checkbox"] {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            top: 8px;
         }
         table {
             width: 100%;
@@ -24,10 +29,10 @@
             position: relative;
         }
         th.sort-asc::after {
-            content: " \2191"; /* Unicode for up arrow */
+            content: " \2191"; /* up arrow */
         }
         th.sort-desc::after {
-            content: " \2193"; /* Unicode for down arrow */
+            content: " \2193"; /* down arrow*/
         }
         td, th {
             border: 1px solid #ddd;
@@ -39,25 +44,34 @@
 <body>
 <div id="app">
     <input v-model="searchQuery" type="search" placeholder="Search...">
+    <label>
+        <input type="checkbox" v-model="showOsuOnly">
+        Show entries from osu!
+    </label>
     <table>
         <thead>
         <tr>
-            <th @click="sortTable('name')">Name</th>
-            <th @click="sortTable('detail')">Detail</th>
-            <th @click="sortTable('category')">Category</th>
+            <th @click="sortTable('anime_name')">Anime Name</th>
+            <th @click="sortTable('artist')">Artist</th>
+            <th @click="sortTable('song_name')">Song Name</th>
+            <th @click="sortTable('genre')">Genre</th>
+            <th @click="sortTable('description')">Description</th>
+            <th @click="sortTable('osu')">osu!</th>
         </tr>
         </thead>
         <tbody>
-        <tr v-for="item in sortedData" :key="item.id">
-            <td>{{ item.name }}</td>
-            <td>{{ item.detail }}</td>
-            <td>{{ item.category }}</td>
+        <tr v-for="item in sortedData" :key="item.id" v-if="showOsuOnly ? item.osu.toLowerCase() === 'yes' : true">
+            <td>{{ item.anime_name }}</td>
+            <td>{{ item.artist }}</td>
+            <td>{{ item.song_name }}</td>
+            <td>{{ item.genre }}</td>
+            <td>{{ item.description }}</td>
+            <td>{{ item.osu }}</td>
         </tr>
         </tbody>
     </table>
 </div>
 
-<!-- Vue JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 <script>
     new Vue({
@@ -65,8 +79,9 @@
         data() {
             return {
                 searchQuery: '',
+                showOsuOnly: false,
                 sortKey: '',
-                sortOrder: 1,  // 1 for ascending, -1 for descending
+                sortOrder: 1,
                 items: []
             };
         },
@@ -92,9 +107,12 @@
             filteredData() {
                 const searchLower = this.searchQuery.toLowerCase();
                 return this.items.filter(item =>
-                    item.name.toLowerCase().includes(searchLower) ||
-                    item.detail.toLowerCase().includes(searchLower) ||
-                    item.category.toLowerCase().includes(searchLower)
+                    item.anime_name.toLowerCase().includes(searchLower) ||
+                    item.artist.toLowerCase().includes(searchLower) ||
+                    item.song_name.toLowerCase().includes(searchLower) ||
+                    item.genre.toLowerCase().includes(searchLower) ||
+                    item.description.toLowerCase().includes(searchLower) &&
+                    (!this.showOsuOnly || item.osu.toLowerCase() === 'yes')
                 );
             },
             sortedData() {
@@ -102,10 +120,10 @@
                     let modifier = this.sortOrder;
                     if (!b[this.sortKey]) return -1 * modifier;
                     if (!a[this.sortKey]) return 1 * modifier;
-                    if (a[this.sortKey].toLowerCase() < b[this.sortKey].toLowerCase()) {
+                    if (a[this.sortKey].toString().toLowerCase() < b[this.sortKey].toString().toLowerCase()) {
                         return -1 * modifier;
                     }
-                    if (a[this.sortKey].toLowerCase() > b[this.sortKey].toLowerCase()) {
+                    if (a[this.sortKey].toString().toLowerCase() > b[this.sortKey].toString().toLowerCase()) {
                         return 1 * modifier;
                     }
                     return 0;
