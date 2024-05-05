@@ -10,29 +10,29 @@
     },
     {
         "id": 2,
-        "anime_name": "Anime 2",
-        "artist": "Artist B",
-        "song_name": "Song B",
-        "genre": "Adventure",
-        "description": "Description of Anime 2",
+        "anime_name": "teekyuu",
+        "artist": "",
+        "song_name": "",
+        "genre": "paskaa",
+        "description": "? spam",
         "osu": ""
     },
     {
         "id": 3,
-        "anime_name": "Anime 3",
-        "artist": "Artist C",
-        "song_name": "Song C",
-        "genre": "Comedy",
-        "description": "Description of Anime 3",
-        "osu": "yes"
+        "anime_name": "BanG Dream!",
+        "artist": "",
+        "song_name": "",
+        "genre": "idol",
+        "description": "viulu",
+        "osu": ""
     },
     {
         "id": 4,
-        "anime_name": "Anime 4",
-        "artist": "Artist D",
-        "song_name": "Song D",
-        "genre": "Drama",
-        "description": "Description of Anime 4",
+        "anime_name": "BanG Dream!",
+        "artist": "",
+        "song_name": "",
+        "genre": "Idol",
+        "description": "twinkle remix",
         "osu": ""
     },
     {
@@ -42,6 +42,42 @@
         "song_name": "Avid",
         "genre": "",
         "description": "my goat",
+        "osu": ""
+    },
+    {
+        "id": 6,
+        "anime_name": "Selector Spread WIXOSS",
+        "artist": "Kanon Wakeshima",
+        "song_name": "world's end, girl's rondo",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 7,
+        "anime_name": "Tasogare Otome x Amnesia",
+        "artist": "Konomi Suzuki",
+        "song_name": "CHOIR JAIL (クワイア ジェイル)",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 8,
+        "anime_name": "Yamada-kun to 7-nin no Majo",
+        "artist": "WEAVER",
+        "song_name": "Kuchizuke Diamond (くちづけDiamond)",
+        "genre": "",
+        "description": "",
+        "osu": "yes"
+    },
+    {
+        "id": 8,
+        "anime_name": "hetalia axis",
+        "artist": "",
+        "song_name": "",
+        "genre": "",
+        "description": "tatu, sasuke",
         "osu": ""
     }
 ]
