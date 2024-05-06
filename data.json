@@ -493,5 +493,126 @@
         "genre": "konosuba",
         "description": "home sweet home, konosuba viba / vibe",
         "osu": ""
+    },
+    {
+        "id": 46,
+        "anime_name": "Mahou Shoujo Madoka★Magica",
+        "anime_year": 2011,
+        "artist": "ClariS",
+        "song_name": "Connect (コネクト)",
+        "song_year": 2011,
+        "genre": "mahou shoujo, magical girl",
+        "description": "claris, yleensä mahou shoujo",
+        "osu": ""
+    },
+    {
+        "id": 47,
+        "anime_name": "Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?",
+        "anime_year": 2013,
+        "artist": "",
+        "song_name": "",
+        "song_year": 2013,
+        "genre": "",
+        "description": "123 lyrics",
+        "osu": ""
+    },
+    {
+        "id": 48,
+        "anime_name": "Maho Girls Precure!",
+        "anime_year": 2016,
+        "artist": "Rie Kitagawa",
+        "song_name": "Dokkin♢Mahoutsukai Precure!",
+        "song_year": 2016,
+        "genre": "",
+        "description": "DOKKIN DOKKIN",
+        "osu": ""
+    },
+    {
+        "id": 49,
+        "anime_name": "Gunslinger Girl",
+        "anime_year": 2003,
+        "artist": "",
+        "song_name": "",
+        "song_year": "",
+        "genre": "",
+        "description": "trigun mutta muija",
+        "osu": ""
+    },
+    {
+        "id": 50,
+        "anime_name": "Xam'd: Lost Memories",
+        "anime_year": 2008,
+        "artist": "",
+        "song_name": "",
+        "song_year": 2008,
+        "genre": "",
+        "description": "guns in my hand lyrics",
+        "osu": ""
+    },
+    {
+        "id": 51,
+        "anime_name": "Code Geass: Lelouch of the Rebellion R2 Special Edition 'Zero Requiem'",
+        "anime_year": 2009,
+        "artist": "",
+        "song_name": "Continued Story",
+        "song_year": 2009,
+        "genre": "",
+        "description": "Kuulostaa nezuko biisiltä",
+        "osu": ""
+    },
+    {
+        "id": 52,
+        "anime_name": "FLCL",
+        "anime_year": 2000,
+        "artist": "",
+        "song_name": "Crazy Sunshine",
+        "song_year": 2000,
+        "genre": "",
+        "description": "Crazy Sunshine lyrics",
+        "osu": ""
+    },
+    {
+        "id": 53,
+        "anime_name": "Hello Spank!",
+        "anime_year": 1981,
+        "artist": "",
+        "song_name": "Ohayou! Spank",
+        "song_year": 1981,
+        "genre": "",
+        "description": "supanku, ohayou spank lyrics",
+        "osu": ""
+    },
+    {
+        "id": 54,
+        "anime_name": "Uma Musume: Pretty Derby Season 2",
+        "anime_year": 2021,
+        "artist": "Machico",
+        "song_name": "Negai no Katachi",
+        "song_year": 2021,
+        "genre": "",
+        "description": "konosuba op artisti",
+        "osu": ""
+    },
+    {
+        "id": 55,
+        "anime_name": "Ani ni Tsukeru Kusuri wa Nai! 5",
+        "anime_year": 2022,
+        "artist": "",
+        "song_name": "",
+        "song_year": 2022,
+        "genre": "",
+        "description": "kiinaa, china, chinese",
+        "osu": ""
+    },
+    {
+        "id": 56,
+        "anime_name": "The Rolling Girls",
+        "anime_year": 2015,
+        "artist": "THE ROLLING GIRLS",
+        "song_name": "Noutenki (脳天気)",
+        "song_year": 2015,
+        "genre": "",
+        "description": "Iitenki da, iitenki da lyrics",
+        "osu": ""
     }
 ]

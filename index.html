@@ -133,8 +133,8 @@
                 sortKey: '',
                 sortOrder: 1,
                 items: [],
-                startYear: 1950,
-                endYear: 2024,
+                startYear: null,
+                endYear: null,
             };
         },
         mounted() {
@@ -142,23 +142,39 @@
                 .then(response => response.json())
                 .then(json => {
                     this.items = json;
-                });
+                    // Calculate the min and max years from the data
+                    let years = this.items.map(item => item.anime_year);
+                    this.startYear = Math.min(...years);
+                    this.endYear = Math.max(...years);
 
-            const slider = document.getElementById('year-slider');
-            noUiSlider.create(slider, {
-                start: [this.startYear, this.endYear],
-                connect: true,
-                range: {
-                    'min': 1950,
-                    'max': 2024
-                }
-            });
-            slider.noUiSlider.on('update', (values) => {
-                this.startYear = parseInt(values[0]);
-                this.endYear = parseInt(values[1]);
-            });
+                    this.initializeSlider();
+                });
         },
         methods: {
+            initializeSlider() {
+                const slider = document.getElementById('year-slider');
+                if (!slider.noUiSlider) { // Initialize only if not already initialized
+                    noUiSlider.create(slider, {
+                        start: [this.startYear, this.endYear],
+                        connect: true,
+                        range: {
+                            'min': this.startYear,
+                            'max': this.endYear
+                        }
+                    });
+                    slider.noUiSlider.on('update', (values) => {
+                        this.startYear = parseInt(values[0]);
+                        this.endYear = parseInt(values[1]);
+                    });
+                } else { // If already initialized, just update the settings
+                    slider.noUiSlider.updateOptions({
+                        range: {
+                            'min': this.startYear,
+                            'max': this.endYear
+                        }
+                    });
+                }
+            },
             sortTable(key) {
                 if (this.sortKey === key) {
                     this.sortOrder = -this.sortOrder;
