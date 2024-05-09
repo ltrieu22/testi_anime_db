@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css">
     <style>
         body {
-            background-color: #121212;
+            background-color: #232628;
             color: #e0e0e0;
             font-family: 'Calibri', sans-serif;
             margin: 0;
             padding: 0;
         }
         input[type="search"], input[type="checkbox"] {
+            color: #fff;
+            background-color: #494848;
             width: 700px;
             padding: 15px;
             margin: 20px 20px 20px 0;
@@ -28,7 +30,7 @@
             border-collapse: collapse;
         }
         th {
-            color: #fff; /* White text for headers */
+            color: #fff;
             padding: 12px 15px;
         }
         th.sort-asc::after {
@@ -38,8 +40,8 @@
             content: " \2193"; /* down arrow */
         }
         td, th {
-            background-color: #333;
-            border: 1px solid #ddd;
+            background-color: #232628;
+            border: 2px solid #6b6b6b;
             padding: 8px;
             text-align: left;
         }
@@ -47,7 +49,7 @@
             display: flex;
             align-items: center;
             padding: 20px;
-            background-color: #222;
+            background-color: #232628;
             color: #fff;
         }
 
@@ -70,14 +72,22 @@
             background-color: #fff;
         }
 
+        .noUi-handle {
+            background-color: #232628;
+        }
+
+        .noUi-connect {
+            background-color: #7edec4;
+        }
+
         .year-label {
             position: absolute;
             width: 400px;
             top: 35px;
             left: 50%;
-            transform: translateX(-67%);
-            text-align: center;        }
-
+            transform: translateX(13%);
+            text-align: center;
+        }
     </style>
 </head>
 <body>
