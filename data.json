@@ -614,5 +614,126 @@
         "genre": "",
         "description": "Iitenki da, iitenki da lyrics",
         "osu": ""
+    },
+    {
+        "id": 57,
+        "anime_name": "Ani ni Tsukeru Kusuri wa Nai! 2",
+        "anime_year": 2018,
+        "artist": "You Ke Mao",
+        "song_name": "Let Him Go!",
+        "song_year": 2018,
+        "genre": "",
+        "description": "kiina, china, solo = 2",
+        "osu": ""
+    },
+    {
+        "id": 58,
+        "anime_name": "Sekkou Boys",
+        "anime_year": 2016,
+        "artist": "",
+        "song_name": "",
+        "song_year": 2016,
+        "genre": "boy band",
+        "description": "50/50, boy band, poika bändi",
+        "osu": ""
+    },
+    {
+        "id": 59,
+        "anime_name": "Isekai Maou to Shoukan Shoujo no Dorei Majutsu Ω",
+        "anime_year": 2021,
+        "artist": "Yuu Serizawa with DJ KOO & MOTSU",
+        "song_name": "EVERYBODY! EVERYBODY!",
+        "song_year": 2021,
+        "genre": "isekai",
+        "description": "everybody, everybody lyrics",
+        "osu": ""
+    },
+    {
+        "id": 60,
+        "anime_name": "Case Closed / Detective Conan",
+        "anime_year": 1996,
+        "artist": "B'z",
+        "song_name": "Girigiri Chop (ギリギリchop)",
+        "song_year": 1999,
+        "genre": "",
+        "description": "giri giri chop",
+        "osu": ""
+    },
+    {
+        "id": 61,
+        "anime_name": "Higurashi no Naku Koro ni Kira",
+        "anime_year": 2011,
+        "artist": "",
+        "song_name": "",
+        "song_year": 2011,
+        "genre": "",
+        "description": "jan ken pon, kivi, paperi, sakset",
+        "osu": ""
+    },
+    {
+        "id": 62,
+        "anime_name": "BanG Dream! 2nd Season",
+        "anime_year": 2019,
+        "artist": "",
+        "song_name": "Picotto! Papitto!! Garupa☆Pico!!!",
+        "song_year": 2019,
+        "genre": "idol",
+        "description": "",
+        "osu": ""
+    },
+    {
+        "id": 63,
+        "anime_name": "BanG Dream! 3rd Season",
+        "anime_year": 2020,
+        "artist": "Roselia",
+        "song_name": "FIRE BIRD",
+        "song_year": 2020,
+        "genre": "idol",
+        "description": "roselia = s2/s3",
+        "osu": "yes"
+    },
+    {
+        "id": 64,
+        "anime_name": "Anti-Magic Academy: The 35th Test Platoon",
+        "anime_year": 2015,
+        "artist": "Kanako Itou",
+        "song_name": "Calling my Twilight",
+        "song_year": 2015,
+        "genre": "",
+        "description": "steins gate artisti",
+        "osu": "yes"
+    },
+    {
+        "id": 65,
+        "anime_name": "Undersea Super Train: Marine Express",
+        "anime_year": 1979,
+        "artist": "",
+        "song_name": "",
+        "song_year": 1979,
+        "genre": "old, vanha",
+        "description": "old sea",
+        "osu": "yes"
+    },
+    {
+        "id": 66,
+        "anime_name": "Misaki no Mayoiga",
+        "anime_year": 2021,
+        "artist": "Hitsujibungaku",
+        "song_name": "Mayoiga",
+        "song_year": 2021,
+        "genre": "jpop",
+        "description": "Hitsujibungaku, rummut koko ajan",
+        "osu": "yes"
+    },
+    {
+        "id": 67,
+        "anime_name": "Heike Monogatari",
+        "anime_year": 2022,
+        "artist": "Hitsujibungaku",
+        "song_name": "Hikaru Toki",
+        "song_year": 2022,
+        "genre": "jpop",
+        "description": "Hitsujibungaku, rauhallisempi ku mayoiga. ei rumpuja koko ajan.",
+        "osu": "yes"
     }
 ]
